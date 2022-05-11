@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f96eb671-4e14-4105-824b-cd25c433fd0a" name="Changes" comment="Classwork/Homework#40/DesktopAndMobileNavigate">
+      <change afterPath="$PROJECT_DIR$/src/components/forms/CourseForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigators/Navigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigators/Navigator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigators/NavigatorDesktop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigators/NavigatorDesktop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigators/NavigatorMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigators/NavigatorMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/AddCourse.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AddCourse.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/functions.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sprint-3_MUI_Responsive_Navigation" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="27PnHGlCxazP9AmICv9vZ5mp7Qt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igorvorobev/Documents/FrontEnd TelRan/react-applicationn/src/components/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/igorvorobev/Documents/FrontEnd TelRan/react-applicationn/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f96eb671-4e14-4105-824b-cd25c433fd0a" name="Changes" comment="" />
+      <created>1649230503053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649230503053</updated>
+      <workItem from="1649230509750" duration="67000" />
+      <workItem from="1649230676616" duration="506000" />
+      <workItem from="1649231205407" duration="26409000" />
+      <workItem from="1649345604499" duration="6601000" />
+      <workItem from="1649353645217" duration="18000" />
+      <workItem from="1649353680281" duration="61000" />
+      <workItem from="1649354000255" duration="9000" />
+      <workItem from="1649354027295" duration="19000" />
+      <workItem from="1649403225172" duration="5357000" />
+      <workItem from="1649427243591" duration="1394000" />
+      <workItem from="1649491711829" duration="100000" />
+      <workItem from="1649491833100" duration="2503000" />
+      <workItem from="1649686417839" duration="19244000" />
+      <workItem from="1649950241570" duration="571000" />
+      <workItem from="1649950846202" duration="7328000" />
+      <workItem from="1649960138198" duration="1923000" />
+      <workItem from="1649962169760" duration="76000" />
+      <workItem from="1649962267338" duration="98000" />
+      <workItem from="1649962384176" duration="975000" />
+      <workItem from="1649963804767" duration="56000" />
+      <workItem from="1649963915551" duration="166000" />
+      <workItem from="1649998340484" duration="32000" />
+      <workItem from="1649998411687" duration="252000" />
+      <workItem from="1649998785079" duration="1057000" />
+      <workItem from="1650186229650" duration="3000" />
+      <workItem from="1650900347642" duration="6306000" />
+      <workItem from="1650907588475" duration="1466000" />
+      <workItem from="1650909094958" duration="35870000" />
+      <workItem from="1651822673397" duration="11571000" />
+    </task>
+    <task id="LOCAL-00001" summary="Classwork 34">
+      <created>1649236376449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649236376450</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Homework#34">
+      <created>1649254101342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649254101342</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Homework#34/change">
+      <created>1649261381486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261381486</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Homework#34/change">
+      <created>1649272998687</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272998687</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Homework#34/change">
+      <created>1649273057619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649273057619</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Classwork#35/color, inputData, timer">
+      <created>1649403305692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649403305692</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Homework#35/colors, setColor">
+      <created>1649427824625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649427824625</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Homework#35/colors, setColor">
+      <created>1649428180964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649428180964</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Homework#36/lifeMatrix, position">
+      <created>1649744062124</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649744062124</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Classwork/Homework#37/unit_test">
+      <created>1649959730242</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649959730242</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Classwork#38/initial-structure">
+      <created>1650909024519</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650909024519</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Classwork#39/useImitator">
+      <created>1651504062111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651504062111</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Homework#39/useImitator">
+      <created>1651504295558</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651504295558</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Classwork/Homework#40/DesktopAndMobileNavigate">
+      <created>1651822525068</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651822525068</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/homework35" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Classwork 34" />
+    <MESSAGE value="Homework#34" />
+    <MESSAGE value="Homework#34/change" />
+    <MESSAGE value="Classwork#35/color, inputData, timer" />
+    <MESSAGE value="Homework#35/colors, setColor" />
+    <MESSAGE value="Homework#36/lifeMatrix, position" />
+    <MESSAGE value="Classwork/Homework#37/unit_test" />
+    <MESSAGE value="Classwork#38/initial-structure" />
+    <MESSAGE value="Classwork#39/useImitator" />
+    <MESSAGE value="Homework#39/useImitator" />
+    <MESSAGE value="Classwork/Homework#40/DesktopAndMobileNavigate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classwork/Homework#40/DesktopAndMobileNavigate" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
