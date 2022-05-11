@@ -149,7 +149,6 @@ const CourseForm: React.FC<Props> = ({ submitFn }) => {
                         }}>
                             <TextField
                                 id="datetime-local"
-                                label="Opaning date"
                                 type="datetime-local"
                                 sx={{ width: 250 }}
                                 required
