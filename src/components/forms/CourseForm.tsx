@@ -52,7 +52,7 @@ const CourseForm: React.FC<Props> = ({ submitFn, initCourse }) => {
         </InputLabel>
         <Grid container spacing={{ xs: 5, sm: 2, md: 13 }} justifyContent="center">
             <Grid item xs={10} sm={5} >
-                <FormControl fullWidth required>
+                <FormControl fullWidth required disabled={course === initCourse}>
                     <InputLabel id="course-select-label">Course Name</InputLabel>
                     <Select
                         disabled={course === initCourse}
