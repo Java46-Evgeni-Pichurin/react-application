@@ -10,7 +10,7 @@ function Copyright(props: any) {
     return (
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
         {'Copyright © '}
-        <Link color="inherit" href="https://mui.com/">
+        <Link color="inherit" href="https://github.com/Java46-Evgeni-Pichurin/react-application/tree/HW-44">
           Evgeni Pichurin
         </Link>{' '}
         {new Date().getFullYear()}
