@@ -12,6 +12,7 @@ import ConfirmationData from "../../models/ConfirmationData";
 import courseData from "../../config/courseData.json";
 import useLayout from "../../util/useLayout";
 import { ClientData } from "../../models/ClientData";
+import { coursesService } from "../../config/service-config";
 function getActions(actionsFn: (params: GridRowParams)=>JSX.Element[], layout:string): GridColumns {
     const columns: GridColumns = [
         {field: "id", type: "string", headerName: "ID", align: "center", headerAlign: "center", flex:0.5},
@@ -40,7 +41,6 @@ const style = {
   
 const Courses: React.FC = () => {
     const dispatch = useDispatch<any>();
-    
     const clientData = useSelector<StateType, ClientData>(state => state.clientData);
     const courses: Course[] = useSelector<StateType, Course[]>(state => state.courses);
     const [isEdit, setEdit] = React.useState(false);
