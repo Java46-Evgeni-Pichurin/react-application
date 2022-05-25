@@ -19,11 +19,11 @@ export default class CoursesRest implements CoursesService {
     }
     async get(): Promise<Course[]> {
         const response = await fetch(this.#url);
-        const courses: Course[] =  await response.json();
-        return courses.map(c => {
-            c.openingDate = new Date(getIsoDate(c.openingDate));
-            return c;
-        })
+        const course = await response.json();
+        return course.map((courses: Course) => {
+            courses.openingDate = new Date(courses.openingDate);
+            return courses;
+        });
     }
 
     async update(id: number, newCourse: Course): Promise<void> {

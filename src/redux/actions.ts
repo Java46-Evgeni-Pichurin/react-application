@@ -32,3 +32,9 @@ export function updateCourse(course: Course): (dispatch: any)=>void {
 export function authAction(clientData: ClientData): PayloadAction<ClientData> {
     return {payload: clientData, type: AUTH_ACTION};
 }
+export function getCourses(): (dispatcj: any)=>void {
+    return async(dispatch) => {
+        const courses: Course[] = await coursesService.get();
+        dispatch(setCourses(courses));
+    }
+}

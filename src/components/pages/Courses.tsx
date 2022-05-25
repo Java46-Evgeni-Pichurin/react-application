@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Course } from "../../models/Course";
 import { StateType } from "../../redux/store";
@@ -12,7 +12,6 @@ import ConfirmationData from "../../models/ConfirmationData";
 import courseData from "../../config/courseData.json";
 import useLayout from "../../util/useLayout";
 import { ClientData } from "../../models/ClientData";
-import { coursesService } from "../../config/service-config";
 function getActions(actionsFn: (params: GridRowParams)=>JSX.Element[], layout:string): GridColumns {
     const columns: GridColumns = [
         {field: "id", type: "string", headerName: "ID", align: "center", headerAlign: "center", flex:0.5},
