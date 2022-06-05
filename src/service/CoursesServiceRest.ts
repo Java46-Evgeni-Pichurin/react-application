@@ -28,7 +28,7 @@ export default class CoursesServiceRest implements CoursesService {
     }
     private observing() {
         this.get().then(courses => {
-            if (JSON.stringify(courses) != JSON.stringify(curData)) {
+            if (JSON.stringify(courses) !== JSON.stringify(curData)) {
                 curData = courses;
                 this.observer?.next(courses)
             }
