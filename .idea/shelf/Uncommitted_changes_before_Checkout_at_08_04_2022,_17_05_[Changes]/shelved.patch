@@ -1,0 +1,102 @@
+Index: src/App.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport './App.css';\nimport Timer from \"./components/Timer\";\nimport Color from \"./components/Color\";\nimport timeZones from \"./config/time-zones\";\nimport InputData from \"./components/InputData\";\n\ntype ComponentName = 'input' | 'timer' | 'color';\n\nfunction App() {\n    const [timeZone, setTimeZone] = React.useState('Asia/Jerusalem');\n    const [color, setColor] = React.useState('red');\n    const [componentName, setComponentName] = React.useState<ComponentName>('input');\n\n    const mapComponents: Map<ComponentName, React.ReactNode> = new Map();\n    mapComponents.set('color', <Color color={color}></Color>);\n    mapComponents.set('input', <InputData timeZones={timeZones} injectTimeZone={setTimeZone}></InputData>);\n    mapComponents.set('timer', <Timer timeZone={timeZone}></Timer>);\n\n    return (\n        <div>\n            {Array.from(mapComponents.keys()).map(k => <button onClick={() => setComponentName(k)}>{k}</button>)}\n            {mapComponents.get(componentName)}\n    </div>\n    )\n}\n\nexport default App;\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.tsx b/src/App.tsx
+--- a/src/App.tsx	
++++ b/src/App.tsx	
+@@ -4,24 +4,28 @@
+ import Color from "./components/Color";
+ import timeZones from "./config/time-zones";
+ import InputData from "./components/InputData";
++import colors from "./config/colors";
+ 
+-type ComponentName = 'input' | 'timer' | 'color';
++type ComponentName = 'input' | 'timer' | 'color' | 'Choice of colors';
+ 
+ function App() {
+     const [timeZone, setTimeZone] = React.useState('Asia/Jerusalem');
+-    const [color, setColor] = React.useState('red');
+-    const [componentName, setComponentName] = React.useState<ComponentName>('input');
++    const [color, setColor] = React.useState('cornflowerblue');
++    const [componentName, setComponentName] = React.useState<ComponentName>('Choice of colors');
++
+ 
+     const mapComponents: Map<ComponentName, React.ReactNode> = new Map();
+-    mapComponents.set('color', <Color color={color}></Color>);
+-    mapComponents.set('input', <InputData timeZones={timeZones} injectTimeZone={setTimeZone}></InputData>);
+-    mapComponents.set('timer', <Timer timeZone={timeZone}></Timer>);
++    mapComponents.set('Choice of colors', <InputData value={colors} injectValue={setColor}/>);
++    mapComponents.set('color', <Color color={color}/>);
++    mapComponents.set('input', <InputData value={timeZones} injectValue={setTimeZone} />);
++    mapComponents.set('timer', <Timer timeZone={timeZone}/>);
++
+ 
+     return (
+-        <div>
++        <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+             {Array.from(mapComponents.keys()).map(k => <button onClick={() => setComponentName(k)}>{k}</button>)}
+             {mapComponents.get(componentName)}
+-    </div>
++        </div>
+     )
+ }
+ 
+Index: src/components/InputData.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\n\ntype Props = {\n    timeZones: any[],\n    injectTimeZone: (timeZones: string) => void\n}\n\nlet selectElement: any;\n\nconst InputData: React.FC<Props> = ({timeZones, injectTimeZone}) => {\n    function onSelect() {\n        injectTimeZone(selectElement.value);\n    }\n\n    React.useEffect(() => {\n        selectElement = document.getElementById(\"selectInputData\")\n    })\n\n    return <div>\n        <select id=\"selectInputData\">\n            {timeZones.map(tz => <option value={tz.name}>{tz.name}</option>)}\n        </select>\n        <button onClick={onSelect}>GO</button>\n    </div>\n}\n\nexport default InputData;
+===================================================================
+diff --git a/src/components/InputData.tsx b/src/components/InputData.tsx
+--- a/src/components/InputData.tsx	
++++ b/src/components/InputData.tsx	
+@@ -1,15 +1,15 @@
+ import React from "react";
+ 
+ type Props = {
+-    timeZones: any[],
+-    injectTimeZone: (timeZones: string) => void
++    value: any[],
++    injectValue: (timeZones: string) => void
+ }
+ 
+ let selectElement: any;
+ 
+-const InputData: React.FC<Props> = ({timeZones, injectTimeZone}) => {
++const InputData: React.FC<Props> = ({value, injectValue}) => {
+     function onSelect() {
+-        injectTimeZone(selectElement.value);
++        injectValue(selectElement.value);
+     }
+ 
+     React.useEffect(() => {
+@@ -18,7 +18,7 @@
+ 
+     return <div>
+         <select id="selectInputData">
+-            {timeZones.map(tz => <option value={tz.name}>{tz.name}</option>)}
++            {value.map(tz => <option value={tz.name}>{tz.name}</option>)}
+         </select>
+         <button onClick={onSelect}>GO</button>
+     </div>
+Index: src/components/Color.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\n\ntype Props = {\n    color: string;\n}\n\nconst Color: React.FC<Props> = ({color}) => {\n    const style: React.CSSProperties = {width: \"40vw\", height: \"20vh\", backgroundColor: color};\n    return <h1>{color}<div style={style}></div></h1>\n}\n\nexport default Color;
+===================================================================
+diff --git a/src/components/Color.tsx b/src/components/Color.tsx
+--- a/src/components/Color.tsx	
++++ b/src/components/Color.tsx	
+@@ -6,7 +6,7 @@
+ 
+ const Color: React.FC<Props> = ({color}) => {
+     const style: React.CSSProperties = {width: "40vw", height: "20vh", backgroundColor: color};
+-    return <h1>{color}<div style={style}></div></h1>
++    return <h1>{color}<div style={style}/></h1>
+ }
+ 
+ export default Color;
+\ No newline at end of file

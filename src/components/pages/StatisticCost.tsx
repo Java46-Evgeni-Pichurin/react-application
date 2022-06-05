@@ -8,6 +8,6 @@ const StatisticCost: React.FC = () => {
     const courses: Course[] = useSelector<StateType, Course[]>(state => state.courses);
 
     return <Statistics field={"cost"} title={"Courses Cost Statistics"} unit={"ILS"}
-                       intervals={(courseData as any).costIntervals} objects={courses}></Statistics>
+     intervals={(courseData as any).costIntervals} objects={courses}></Statistics>
 }
 export default StatisticCost;

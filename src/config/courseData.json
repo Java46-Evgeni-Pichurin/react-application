@@ -1,62 +1,60 @@
 {
-  "courses": [
-    "Java",
-    "Java Technologies",
-    "QA",
-    "React",
-    "JavaScript",
-    "Html/CSS"
-  ],
-  "lectors": [
-    "Abraham",
-    "Yakob",
-    "Sara",
-    "Yosef",
-    "Itshak",
-    "Vasya",
-    "Moshe"
-  ],
-  "minCost": 5000,
-  "maxCost": 30000,
-  "minHours": 80,
-  "maxHours": 500,
-  "minYear": 2018,
-  "maxYear": 2022,
-  "minId": 100000,
-  "maxId": 999999,
-  "retryPeriod": 3000,
-  "hoursInterval": 20,
-  "costInterval": 2000,
-  "portrait": [
-    "name",
-    "openingDate",
-    "actions"
-  ],
-  "landscape": [
-    "name",
-    "lecturer",
-    "openingDate",
-    "actions"
-  ],
-  "laptop": [
-    "id",
-    "name",
-    "lecturer",
-    "hours",
-    "cost",
-    "openingDate",
-    "actions"
-  ],
-  "hourIntervals": [
-    10,
-    20,
-    50,
-    100
-  ],
-  "costIntervals": [
-    100,
-    500,
-    1000,
-    5000
-  ]
+    "courses": [
+        "Java",
+        "Java Technologies",
+        "QA",
+        "React",
+        "JavaScript",
+        "Html/CSS"
+    ],
+    "lectors": [
+        "Abraham",
+        "Yakob",
+        "Sara",
+        "Yosef",
+        "Itshak",
+        "Vasya",
+        "Moshe"
+    ],
+    "minCost": 5000,
+    "maxCost": 30000,
+    "minHours": 80,
+    "maxHours": 500,
+    "minYear": 2018,
+    "maxYear": 2022,
+    "minId": 100000,
+    "maxId": 999999,
+    "retryPeriod": 3000,
+    "portrait": [
+        "name",
+        "openingDate",
+        "actions"
+    ],
+    "landscape": [
+        "name",
+        "lecturer",
+        "openingDate",
+        "actions"
+    ],
+    "laptop": [
+        "id",
+        "name",
+        "lecturer",
+        "hours",
+        "cost",
+        "openingDate",
+        "actions"
+    ],
+    "hourIntervals": [
+        10,
+        20,
+        50,
+        100
+    ],
+    "costIntervals": [
+        100,
+        500,
+        1000,
+        5000
+    ]
 }

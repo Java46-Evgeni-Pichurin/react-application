@@ -33,7 +33,7 @@ export function getRouteIndex(items: RouteType[], pathname: string): number {
 }
 export function getStatistics(field: string, interval: number, array: any[]): Distribution {
     if (array.length === 0) {
-        throw "empty array"
+        throw "empty array "
     }
     if (typeof array[0][field] !== 'number') {
         throw `field ${field} doesn't exist or no number`
@@ -43,6 +43,6 @@ export function getStatistics(field: string, interval: number, array: any[]): Di
         const intervalNumber: number = +e[0];
         const min: number = intervalNumber * interval;
         const max: number = min + interval - 1;
-        return { min, max, amount: +e[1]};
+        return { min, max, amount: +e[1] }
     })
 }
