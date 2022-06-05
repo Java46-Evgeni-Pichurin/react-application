@@ -9,7 +9,8 @@ function getHeaders(): any {
         "Content-Type": "application/json"
     }
 }
-const POLLING_INTERVAL = 5000
+const POLLING_INTERVAL = 5000;
+let curData: any;
 async function responseProcessing(response: Response): Promise<any> {
     if (response.status < 400) {
         return await response.json();
@@ -26,7 +27,6 @@ export default class CoursesServiceRest implements CoursesService {
         console.log(url)
     }
     private observing() {
-        let curData: any;
         this.get().then(courses => {
             if (courses != curData) {
                 curData = courses;
